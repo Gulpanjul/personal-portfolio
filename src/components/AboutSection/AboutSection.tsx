@@ -9,7 +9,7 @@ const AboutSection = () => {
     <section className="text-primary">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
-          src="/Images/Personal/About.png"
+          src="/Images/Personal/about.png"
           width={500}
           height={500}
           alt="About Image"
