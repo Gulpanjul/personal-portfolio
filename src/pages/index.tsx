@@ -3,6 +3,7 @@ import PageHead from "@/components/commons/PageHead";
 import HeroSection from "@/components/HeroSection";
 import ThemeToggle from "@/components/commons/ThemeToggle/ThemeToggle";
 import Navbar from "@/components/Navbar";
+import AboutSection from "@/components/AboutSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
+        <AboutSection />
       </div>
     </main>
   );
