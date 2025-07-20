@@ -27,18 +27,17 @@ const HeroSection = () => {
             <Button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#5433FF] via-[#20BDFF] to-[#A5FECB] hover:bg-slate-200 text-white">
               Hire me
             </Button>
-            <Button
-              variant={"outline"}
+            <button
               className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#5433FF] via-[#20BDFF] to-[#A5FECB] text-primary mt-3"
             >
-              <span className="block bg-background hover:bg-slate-100 rounded-full px-5 py-1">
+              <span className="block bg-background hover:bg-slate-100 rounded-full px-5 py-2">
                 Download CV
               </span>
-            </Button>
+            </button>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4">
-          <div className="rounded-full bg-foreground w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-md bg-gray-500 w-[250px] h-[250px] lg:w-[320px] lg:h-[320px] relative">
             <Image
               src="/Images/Personal/avatar.png"
               alt="my image"

@@ -1,11 +1,20 @@
 "use client"
 
 import { useTheme } from "next-themes"
-import { Moon, Sun } from "lucide-react"
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
+import { Moon, Sun } from "lucide-react"
 
-export function ThemeToggle() {
+function ThemeToggle() {
   const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  // Tunggu sampai komponen client-side sudah mount
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return null // atau bisa tampilkan loading skeleton, dsb
 
   return (
     <Button
@@ -18,3 +27,5 @@ export function ThemeToggle() {
     </Button>
   )
 }
+
+export default ThemeToggle

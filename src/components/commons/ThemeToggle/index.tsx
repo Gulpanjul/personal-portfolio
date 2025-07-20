@@ -1,3 +1,3 @@
-import ThemeProvider from "../ThemeProvider";
+import ThemeToggle from "./ThemeToggle";
 
-export default ThemeProvider;
+export default ThemeToggle;
