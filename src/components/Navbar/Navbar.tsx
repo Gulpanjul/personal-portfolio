@@ -13,7 +13,7 @@ const Navbar = () => {
   };
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-background bg-opacity-90">
-      <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2 ">
         <Link
           href="/"
           className="text-lg md:text-5xl text-primary font-semibold"
@@ -40,7 +40,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className="menu hidden md:block md:w-auto">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 items-center">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} />

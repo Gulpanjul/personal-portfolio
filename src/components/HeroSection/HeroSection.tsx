@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 const HeroSection = () => {
   return (
     <section>
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+      <div className="grid grid-cols-1 sm:grid-cols-12 min-h-screen">
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-primary mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5433FF] via-[#20BDFF] to-[#A5FECB]">
@@ -27,8 +27,8 @@ const HeroSection = () => {
             <Button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#5433FF] via-[#20BDFF] to-[#A5FECB] hover:bg-slate-200 text-white">
               Hire me
             </Button>
-            <Button className="w-full sm:w-fit rounded-full bg-gradient-to-br from-[#5433FF] via-[#20BDFF] to-[#A5FECB] p-[2px]">
-              <span className="block bg-background hover:bg-transparent hover:bg-slate-100 rounded-full px-5 py-1.5 text-primary">
+            <Button className="w-full sm:w-fit rounded-full bg-gradient-to-br from-[#5433FF] via-[#20BDFF] to-[#A5FECB] p-[2px] mt-3">
+              <span className="block bg-background hover:bg-transparent hover:bg-slate-100 rounded-full w-full sm:px-5 py-1.5 text-primary">
                 Download CV
               </span>
             </Button>
