@@ -24,11 +24,13 @@ const HeroSection = () => {
             officia! Tempore sint maiores exercitationem aperiam!
           </p>
           <div>
-            <Button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#5433FF] via-[#20BDFF] to-[#A5FECB] hover:bg-slate-200 text-white">
-              Hire me
+            <Button className="mr-4 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#5433FF] via-[#20BDFF] to-[#A5FECB] p-[3px]">
+              <span className="block bg-transparent hover:bg-background rounded-full w-full sm:px-5 py-0.5 text-background hover:text-primary text-xl">
+                Hire me
+              </span>
             </Button>
             <Button className="w-full sm:w-fit rounded-full bg-gradient-to-br from-[#5433FF] via-[#20BDFF] to-[#A5FECB] p-[2px] mt-3">
-              <span className="block bg-background hover:bg-transparent hover:bg-slate-100 rounded-full w-full sm:px-5 py-1.5 text-primary">
+              <span className="block bg-background hover:bg-transparent hover:bg-slate-100 rounded-full w-full sm:px-5 py-0.5 text-primary hover:text-background text-xl">
                 Download CV
               </span>
             </Button>

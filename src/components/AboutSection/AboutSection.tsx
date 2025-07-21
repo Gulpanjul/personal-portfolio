@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import Marquee from "react-fast-marquee";
 import techList from "./TechList.contants";
 import TechList from "./TechList";
@@ -16,7 +15,7 @@ const AboutSection = () => {
           className="border-8 border-gray-500 rounded-full"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold mb-4">About Me</h2>
+          <h2 className="text-6xl font-bold mb-4">About Me</h2>
           <p className="text-base text-muted-foreground lg:text-lg">
             A graduate of the Information Systems program at Universitas
             Gunadarma (2023) with a strong interest in full-stack web
