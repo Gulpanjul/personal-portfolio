@@ -1,18 +1,18 @@
 import { useRef } from "react";
-import Details from "./Details";
 import detailList from "./DetailList.constant";
+import Details from "./Details";
 import { motion, useScroll } from "framer-motion";
 
-const ExperienceSection = () => {
+const EducationSection = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "center start"],
   });
   return (
-    <section className="my-64" id="experience">
+    <section className="my-64" id="education">
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
-        Experience
+        Education
       </h2>
       <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
         <motion.div
@@ -23,12 +23,11 @@ const ExperienceSection = () => {
           {detailList.map((detail, index) => (
             <Details
               key={index}
-              position={detail.position}
-              company={detail.company}
-              companyLink={detail.companyLink}
+              type={detail.type}
+              major={detail.major}
               time={detail.time}
-              address={detail.address}
-              work={detail.work}
+              place={detail.place}
+              info={detail.info}
             />
           ))}
         </ul>
@@ -37,4 +36,4 @@ const ExperienceSection = () => {
   );
 };
 
-export default ExperienceSection;
+export default EducationSection;

@@ -1,6 +1,12 @@
 import {
+  siCss,
+  siGit,
+  siGithub,
+  siHtml5,
+  siJavascript,
   siNextdotjs,
   siNodedotjs,
+  siPostgresql,
   siPrisma,
   siReact,
   siTailwindcss,
@@ -10,32 +16,56 @@ import {
 
 const techList = [
   {
-    name: "Next.js",
-    icon: siNextdotjs,
+    name: "HTML",
+    icon: siHtml5,
   },
   {
-    name: "Node.js",
-    icon: siNodedotjs,
+    name: "CSS",
+    icon: siCss,
   },
   {
-    name: "React",
-    icon: siReact,
+    name: "Javascript",
+    icon: siJavascript,
   },
   {
     name: "TypeScript",
     icon: siTypescript,
   },
   {
-    name: "Prisma",
-    icon: siPrisma,
+    name: "React",
+    icon: siReact,
   },
   {
-    name: "Tailwindcss",
-    icon: siTailwindcss,
+    name: "Next.js",
+    icon: siNextdotjs,
   },
   {
     name: "vite",
     icon: siVite,
+  },
+   {
+    name: "Tailwindcss",
+    icon: siTailwindcss,
+  },
+  {
+    name: "Node.js",
+    icon: siNodedotjs,
+  },
+  {
+    name: "Prisma",
+    icon: siPrisma,
+  },
+  {
+    name: "postgresql",
+    icon: siPostgresql,
+  },
+  {
+    name: "Git",
+    icon: siGit,
+  },
+  {
+    name: "GitHub",
+    icon: siGithub
   }
 ];
 

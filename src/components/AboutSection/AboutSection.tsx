@@ -27,11 +27,11 @@ const AboutSection = () => {
             contribute to impactful tech projects by combining technical skills
             with a user-centered perspective.
           </p>
-          <div className="flex flex-row mt-8 items-center">
-            <h2 className="text-4xl font-bold border-r-4 border-primary py-4">Tech Stack</h2>
-            <Marquee direction="right" loop={0} autoFill={true}>
+          <div className="flex flex-row mt-10 items-center">
+            <h2 className="text-lg sm:text-2xl lg:text-4xl font-bold border-r-4 pl-4 border-primary h-full flex items-center">Tech Stack</h2>
+            <Marquee direction="right" loop={0} autoFill={true} speed={150}>
               {techList.map((tech, index) => (
-                <div key={index} className="w-28 h-28 flex items-center justify-center mx-4 mt-1">
+                <div key={index} className="mx-4">
                   <TechList icon={tech.icon} title={tech.name} />
                 </div>
               ))}

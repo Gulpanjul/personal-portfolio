@@ -19,12 +19,19 @@ const Details = ({
   address,
   work,
 }: PropTypes) => {
-    const ref = useRef(null);
+  const ref = useRef(null);
   return (
-    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
-      <Lilcon reference={ref}/>
-      <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 0.5, type: "spring" }}>
-        <h3 className="capitalize text-2xl font-semibold sm:text-xl xs:text-lg">
+    <li
+      ref={ref}
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between md:w-[80%]"
+    >
+      <Lilcon reference={ref} />
+      <motion.div
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
+      >
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {position}&nbsp;
           <a
             href={companyLink}
