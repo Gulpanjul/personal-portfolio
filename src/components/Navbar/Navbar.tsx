@@ -20,7 +20,7 @@ const Navbar = () => {
         >
           LOGO
         </Link>
-        <div className="mobile-menu block md:hidden">
+        <div className="mobile-menu block lg:hidden">
           <button
             className="flex flex-col items-center justify-start relative"
             onClick={handleClick}
@@ -39,7 +39,7 @@ const Navbar = () => {
             ></span>
           </button>
         </div>
-        <div className="menu hidden md:block md:w-auto">
+        <div className="menu hidden lg:block lg:w-auto">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 items-center">
             {navLinks.map((link, index) => (
               <li key={index}>
