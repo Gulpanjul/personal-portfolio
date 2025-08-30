@@ -1,12 +1,11 @@
 import Image from "next/image";
-import { Button } from "../ui/button";
+import { Button } from "../../../ui/button";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section>
-      <div className="grid grid-cols-1 sm:grid-cols-12 min-h-screen">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
+      <div className="grid grid-cols-1 lg:grid-cols-12">
+        <div className="col-span-7 place-self-center text-center lg:text-left">
           <h1 className="text-primary mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5433FF] via-[#20BDFF] to-[#A5FECB]">
               Hello, I&apos;m{" "}
@@ -48,7 +47,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
   );
 };
 
