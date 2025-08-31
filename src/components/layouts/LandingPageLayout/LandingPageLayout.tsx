@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import PageHead from "../commons/PageHead";
+import PageHead from "../../commons/PageHead";
 import LandingPageNavbar from "./LandingPageNavbar";
 import LandingPageFooter from "./LandingPageFooter";
 

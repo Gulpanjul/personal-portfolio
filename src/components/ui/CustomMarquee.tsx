@@ -13,7 +13,7 @@ const CustomMarquee = (props: TypeProps) => {
       direction={direction || "right"}
       loop={0}
       autoFill={true}
-      speed={80}
+      speed={50}
       gradient={true}
       gradientWidth={150}
       gradientColor={`hsl(var(--background))`}

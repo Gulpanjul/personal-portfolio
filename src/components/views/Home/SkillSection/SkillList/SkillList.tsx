@@ -1,5 +1,4 @@
-import Image from "next/image";
-import React from "react";
+import Paragraph from "@/components/ui/Paragraph";
 import { SimpleIcon } from "simple-icons";
 
 interface PropTypes {
@@ -7,7 +6,8 @@ interface PropTypes {
   title: string;
 }
 
-const TechList = ({ icon, title }: PropTypes) => {
+const SkillList = (props: PropTypes) => {
+  const { icon, title } = props;
   return (
     <div className="flex flex-col items-center justify-center gap-2">
       <div
@@ -15,9 +15,9 @@ const TechList = ({ icon, title }: PropTypes) => {
         dangerouslySetInnerHTML={{ __html: icon.svg }}
         style={{ fill: "currentColor" }}
       />
-      <span className="text-xs sm:text-sm md:text-base lg:text-lg text-primary text-center font-medium">{title}</span>
+      <Paragraph size="small" className="text-muted-foreground">{title}</Paragraph>
     </div>
   );
 };
 
-export default TechList;
+export default SkillList;

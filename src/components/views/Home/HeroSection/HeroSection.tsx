@@ -1,52 +1,12 @@
-import Image from "next/image";
-import { Button } from "../../../ui/button";
-import { TypeAnimation } from "react-type-animation";
+import HeroText from "./HeroText";
+import HeroAvatar from "./HeroAvatar";
 
 const HeroSection = () => {
   return (
-      <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center lg:text-left">
-          <h1 className="text-primary mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5433FF] via-[#20BDFF] to-[#A5FECB]">
-              Hello, I&apos;m{" "}
-            </span>
-            <br />
-            <TypeAnimation
-              sequence={["Gulpa", 1000, "Web Developer", 1000, "3D Designer", 1000, "Graphic Designer", 1000]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
-          </h1>
-          <p className="text-muted-foreground text-base sm:text-lg lg:text-xl mb-6">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum,
-            officia! Tempore sint maiores exercitationem aperiam!
-          </p>
-          <div>
-            <Button className="mr-4 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#5433FF] via-[#20BDFF] to-[#A5FECB] p-[3px]">
-              <span className="block bg-transparent hover:bg-background rounded-full w-full sm:px-5 py-0.5 text-background hover:text-primary text-xl">
-                Hire me
-              </span>
-            </Button>
-            <Button className="w-full sm:w-fit rounded-full bg-gradient-to-br from-[#5433FF] via-[#20BDFF] to-[#A5FECB] p-[2px] mt-3">
-              <span className="block bg-background hover:bg-transparent hover:bg-slate-100 rounded-full w-full sm:px-5 py-0.5 text-primary hover:text-background text-xl">
-                Download CV
-              </span>
-            </Button>
-          </div>
-        </div>
-        <div className="col-span-5 place-self-center mt-4">
-          <div className="rounded-md bg-gray-500 w-[250px] h-[250px] lg:w-[320px] lg:h-[320px] relative">
-            <Image
-              src="/Images/Personal/avatar.png"
-              alt="my image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
-            />
-          </div>
-        </div>
-      </div>
+    <div className="grid grid-cols-1 lg:grid-cols-12">
+      <HeroText />
+      <HeroAvatar />
+    </div>
   );
 };
 

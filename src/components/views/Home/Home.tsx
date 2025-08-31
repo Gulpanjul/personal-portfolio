@@ -2,6 +2,7 @@ import HeroSection from "@/components/views/Home/HeroSection";
 import SkillSection from "./SkillSection";
 import { cn } from "@/lib/utils";
 import Section from "@/components/ui/Section";
+import AboutSection from "./AboutSection";
 
 const Home = () => {
   return (
@@ -13,7 +14,11 @@ const Home = () => {
       <Section>
         <SkillSection />
       </Section>
-      {/* <AboutSection />
+
+      <Section>
+        <AboutSection />
+      </Section>
+      {/* 
 
         <ExperienceSection />
         <EducationSection />
