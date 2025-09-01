@@ -3,6 +3,9 @@ import SkillSection from "./SkillSection";
 import { cn } from "@/lib/utils";
 import Section from "@/components/ui/Section";
 import AboutSection from "./AboutSection";
+import ExperienceSection from "./ExperienceSection";
+import EducationSection from "./EducationSection";
+import ProjectsSection from "./ProjectsSection";
 
 const Home = () => {
   return (
@@ -18,12 +21,18 @@ const Home = () => {
       <Section>
         <AboutSection />
       </Section>
-      {/* 
 
+      <Section className="mt-20">
         <ExperienceSection />
-        <EducationSection />
+      </Section>
 
-        <ProjectsSection /> */}
+      <Section>
+        <EducationSection />
+      </Section>
+
+      <Section>
+        <ProjectsSection />
+      </Section>
     </div>
   );
 };

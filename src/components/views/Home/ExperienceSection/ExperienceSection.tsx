@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Details from "./Details";
 import detailList from "./DetailList.constant";
 import { motion, useScroll } from "framer-motion";
+import Display from "@/components/ui/Display";
 
 const ExperienceSection = () => {
   const ref = useRef(null);
@@ -10,10 +11,13 @@ const ExperienceSection = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <section className="my-64" id="experience">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+    <>
+      <Display size="md" className="font-bold mb-32 text-center">
         Experience
-      </h2>
+      </Display>
+      {/* <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+        Experience
+      </h2> */}
       <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
@@ -33,7 +37,7 @@ const ExperienceSection = () => {
           ))}
         </ul>
       </div>
-    </section>
+    </>
   );
 };
 
