@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Heading from "@/components/ui/Heading";
+import Display from "@/components/ui/Display";
 import Label from "@/components/ui/Label";
 import Paragraph from "@/components/ui/Paragraph";
 import { TypeAnimation } from "react-type-animation";
@@ -39,15 +39,15 @@ const NameAnimation = () => {
 const HeroText = () => {
   return (
     <div className="col-span-7 place-self-center text-center lg:text-left">
-      <Heading as="h1" size="xLarge" strong>
+      <Display size="lg">
         <NameAnimation />
-      </Heading>
-      <Paragraph size="large" className="text-muted-foreground">
+      </Display>
+      <Paragraph size="large" className="text-muted-foreground my-4">
         Information Systems graduate blending digital marketing, web
         development, and creative design into impactful solutions.
       </Paragraph>
-      <div className="mt-4">
-        <Button className={`mr-4 ${buttonClassName}`}>
+      <div className="mt-4 flex flex-col lg:flex-row gap-5 ">
+        <Button className={`${buttonClassName}`}>
           <Label
             className={`bg-transparent hover:bg-background text-background hover:text-primary ${spanClassName}`}
             size={"small"}
@@ -56,7 +56,7 @@ const HeroText = () => {
             Hire me
           </Label>
         </Button>
-        <Button className={`mt-3 ${buttonClassName}`}>
+        <Button className={`${buttonClassName}`}>
           <Label
             className={`bg-background hover:bg-transparent text-primary hover:text-background ${spanClassName}`}
             size={"xSmall"}

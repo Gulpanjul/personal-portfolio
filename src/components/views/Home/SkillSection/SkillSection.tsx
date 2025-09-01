@@ -6,13 +6,13 @@ import { backendToolsTech, frontendTech } from "./SkillSection.constant";
 const SkillSection = () => {
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 items-center justify-between text-center flex-col flex gap-5">
+      <div className="sm:border-muted-foreground sm:border rounded-md py-8 px-16 items-center justify-between text-center flex-col flex gap-5">
         <Heading as="h2" size="medium" strong>
           Tech Stack I Work With
         </Heading>
         <CustomMarquee>
           {frontendTech.map((tech, index) => (
-            <div key={index} className="mx-4">
+            <div key={index} className="m-4">
               <SkillList icon={tech.icon} title={tech.name} />
             </div>
           ))}
