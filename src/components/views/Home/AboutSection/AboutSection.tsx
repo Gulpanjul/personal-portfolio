@@ -1,10 +1,8 @@
 import Image from "next/image";
 import Paragraph from "@/components/ui/Paragraph";
-import Heading from "@/components/ui/Heading";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import SocialAbout from "./SocialAbout";
 import { socialList } from "./AboutSection.constant";
 import Dock from "@/components/ui/dock";
+import Display from "@/components/ui/Display";
 
 const AboutSection = () => {
   return (
@@ -18,9 +16,7 @@ const AboutSection = () => {
           className="border-8 border-gray-500 rounded-full"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <Heading as="h2" size="large" strong>
-            About Me
-          </Heading>
+          <Display size="sm">About Me</Display>
           <Paragraph className="mt-4 text-muted-foreground" size="medium">
             A graduate of the Information Systems program at Universitas
             Gunadarma (2023) with a strong interest in full-stack web
@@ -33,19 +29,6 @@ const AboutSection = () => {
             with a user-centered perspective.
           </Paragraph>
           <div className="mt-10">
-            {/* <ScrollArea>
-              <div className="flex gap-4 mb-4">
-                {socialList.map((tech, index) => (
-                  <div
-                    key={index}
-                    className="shrink-0 bg-muted px-4 py-4 rounded-xl shadow-sm hover:shadow-md transition flex items-center justify-center"
-                  >
-                    <SocialAbout icon={tech.icon} link={tech.link} />
-                  </div>
-                ))}
-              </div>
-              <ScrollBar orientation="horizontal" />
-            </ScrollArea> */}
             <Dock
               items={socialList.map((social) => ({
                 icon: <social.icon className="w-6 h-6 text-primary" />,
