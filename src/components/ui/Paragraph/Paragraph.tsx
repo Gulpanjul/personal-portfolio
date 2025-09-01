@@ -11,10 +11,6 @@ const paragraphVariants = cva("font-normal", {
       true: "font-semibold",
       false: "font-normal",
     },
-    color: {
-      primary: "text-primary",
-      secondary: "text-secondary",
-    },
   },
   defaultVariants: {
     size: "medium",
@@ -25,15 +21,14 @@ const paragraphVariants = cva("font-normal", {
 interface PropTypes {
   size?: "large" | "medium" | "small";
   strong?: boolean;
-  color?: "primary" | "secondary";
   children: React.ReactNode;
   className?: string;
 }
 
 const Paragraph = (props: PropTypes) => {
-  const { size, strong, color, children, className } = props;
+  const { size, strong, children, className } = props;
   return (
-    <p className={paragraphVariants({ size, strong, color, className })}>{children}</p>
+    <p className={paragraphVariants({ size, strong, className })}>{children}</p>
   );
 };
 

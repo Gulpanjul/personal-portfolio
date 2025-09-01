@@ -10,7 +10,6 @@ type HeadingProps = {
     | "xSmall"
     | "xxSmall"
     | "xXXSmall";
-  color?: "primary" | "secondary";
   strong?: boolean;
   children: React.ReactNode;
 };
@@ -25,15 +24,9 @@ const sizeClasses = {
   xXXSmall: "text-[12px] leading-[16px] tracking-[0.8em]",
 };
 
-const colorClasses = {
-  primary: "text-primary",
-  secondary: "text-secondary",
-};
-
 const Heading: React.FC<HeadingProps> = ({
   as: Tag = "h2", // default
   size = "medium",
-  color = "primary",
   strong = false,
   children,
 }) => {
@@ -41,7 +34,6 @@ const Heading: React.FC<HeadingProps> = ({
     <Tag
       className={cn(
         sizeClasses[size],
-        colorClasses[color],
         strong && "font-semibold"
       )}
     >
