@@ -45,7 +45,7 @@ const ProjectCard = ({
           </Link>
         </div>
       </div>
-      <div className="text-primary rounded-b-xl mt=3 bg-card py-6 px-4">
+      <div className="text-primary rounded-b-xl mt-3 bg-card py-6 px-4">
         <h5 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg mb-2">{title}</h5>
         <p className="text-muted-foreground">{description}</p>
       </div>

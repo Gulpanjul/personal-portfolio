@@ -6,6 +6,7 @@ import AboutSection from "./AboutSection";
 import ExperienceSection from "./ExperienceSection";
 import EducationSection from "./EducationSection";
 import ProjectsSection from "./ProjectsSection";
+import CertificateSection from "./CertificateSection";
 
 const Home = () => {
   return (
@@ -32,6 +33,10 @@ const Home = () => {
 
       <Section>
         <ProjectsSection />
+      </Section>
+
+      <Section>
+        <CertificateSection />
       </Section>
     </div>
   );
