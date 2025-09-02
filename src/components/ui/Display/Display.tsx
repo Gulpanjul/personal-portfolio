@@ -9,6 +9,10 @@ const displayVariants = cva("tracking-tight font-normal", {
       md: "text-[72px] leading-[80px] font-normal",
       sm: "text-[56px] leading-[64px] font-normal",
     },
+    strong: {
+      true: "font-semibold",
+      false: "",
+    },
   },
   defaultVariants: {
     size: "lg",
@@ -20,11 +24,11 @@ export interface DisplayProps
     VariantProps<typeof displayVariants> {}
 
 const Display = React.forwardRef<HTMLHeadingElement, DisplayProps>(
-  ({ className, size, ...props }, ref) => {
+  ({ className, size, strong, ...props }, ref) => {
     return (
       <h1
         ref={ref}
-        className={cn(displayVariants({ size }), className)}
+        className={cn(displayVariants({ size, strong }), className)}
         {...props}
       />
     );

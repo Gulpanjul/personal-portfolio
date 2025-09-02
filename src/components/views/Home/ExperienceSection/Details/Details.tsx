@@ -36,7 +36,7 @@ const Details = ({
           <a
             href={companyLink}
             target="_blank"
-            className="text-transparent bg-clip-text bg-gradient-to-r from-[#5433FF] via-[#20BDFF] to-[#A5FECB] capitalize hover:text-muted-foreground"
+            className="text-transparent bg-clip-text bg-linear-to-r from-[#5433FF] via-[#20BDFF] to-[#A5FECB] capitalize hover:text-muted-foreground"
           >
             @{company}
           </a>

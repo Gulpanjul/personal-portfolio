@@ -4,7 +4,7 @@ const paragraphVariants = cva("font-normal", {
   variants: {
     size: {
       large: "text-lg leading-[1.6em] tracking-normal",
-      medium: "text-base leading-[1.6em] tracking-[0.1em]",
+      medium: "text-base leading-[1.6em] tracking-widest",
       small: "text-sm leading-[1.6em] tracking-[0.25em]",
     },
     strong: {

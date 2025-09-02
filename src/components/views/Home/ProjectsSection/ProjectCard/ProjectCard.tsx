@@ -1,4 +1,3 @@
-
 import { CodeBracketIcon } from "@heroicons/react/16/solid";
 import { EyeIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
@@ -30,7 +29,7 @@ const ProjectCard = ({
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-card/80 bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 rounded-t-xl">
+        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-card/80 hidden group-hover:flex  transition-all duration-500 rounded-t-xl">
           <Link
             href={gitUrl}
             className="h-14 w-14 mr-2 border-2 relative rounded-full border-muted-foreground hover:border-primary group/link"
@@ -45,8 +44,10 @@ const ProjectCard = ({
           </Link>
         </div>
       </div>
-      <div className="text-primary rounded-b-xl mt-3 bg-card py-6 px-4">
-        <h5 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg mb-2">{title}</h5>
+      <div className="text-primary rounded-b-xl mt-3 py-6 px-4">
+        <h5 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg mb-2">
+          {title}
+        </h5>
         <p className="text-muted-foreground">{description}</p>
       </div>
     </div>

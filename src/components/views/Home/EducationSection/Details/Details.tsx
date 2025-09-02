@@ -19,7 +19,7 @@ const Details = ({
       <Lilcon reference={ref}/>
       <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 0.5, type: "spring" }}>
         <h3 className="capitalize text-2xl font-semibold sm:text-xl xs:text-lg">
-          {type} {"in "}<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5433FF] via-[#20BDFF] to-[#A5FECB] capitalize hover:text-muted-foreground">{major}</span>
+          {type} {"in "}<span className="text-transparent bg-clip-text bg-linear-to-r from-[#5433FF] via-[#20BDFF] to-[#A5FECB] capitalize hover:text-muted-foreground">{major}</span>
         </h3>
         <span className="capitalize font-medium text-muted-foreground xs:text-sm">
           {time} | {place}

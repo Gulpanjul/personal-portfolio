@@ -1,15 +1,24 @@
 const CertificateList = [
   {
-    title: "Codecademy - HTML & CSS",
-    link: "https://www.codecademy.com/profiles/dongkyu.lee/achievements/series/100/100.0",
-    image: "Images/Certificate/codecademy.png",
-    alt: "Codecademy - HTML & CSS",
+    alt: "Dicoding - Belajar Dasar AI",
+    title: "Belajar Dasar AI",
+    link: "#",
+    image: "/Images/Certificate/juhikfa4ubnhfjz1uf8i.webp",
+    organization: "Dicoding",
   },
   {
-    title: "Codecademy - JavaScript",
-    link: "https://www.codecademy.com/profiles/dongkyu.lee/achievements/series/100/100.0",
-    image: "Images/Certificate/codecademy.png",
-    alt: "Codecademy - JavaScript",
+    alt: "Dicoding - Belajar Dasar Pemprograman JavaScript",
+    title: "Belajar Dasar Pemprograman JavaScript",
+    link: "#",
+    image: "/Images/Certificate/mghtcamis8s22tkfrwk6.webp",
+    organization: "Dicoding",
+  },
+  {
+    alt: "Dicoding - Belajar Dasar Pemprograman JavaScript",
+    title: "Belajar Dasar Pemprograman Web",
+    link: "#",
+    image: "/Images/Certificate/rdkmlmfdspuxjjj1w1kw.webp",
+    organization: "Dicoding",
   },
 ];
 

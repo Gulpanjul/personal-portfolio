@@ -5,8 +5,8 @@ const labelVariants = cva("font-sans", {
   variants: {
     size: {
       large: "text-[18px] leading-[24px]",
-      medium: "text-[16px] leading-[20px] tracking-[0.1em]",
-      small: "text-[14px] leading-[20px] tracking-[0.1em]",
+      medium: "text-[16px] leading-[20px] tracking-widest",
+      small: "text-[14px] leading-[20px] tracking-widest",
       xSmall: "text-[12px] leading-[16px] tracking-[0.25em]",
     },
     weight: {
