@@ -1,11 +1,11 @@
-import { Fragment } from "react";
+import { Fragment, ReactNode } from "react";
 import PageHead from "../../commons/PageHead";
-import LandingPageNavbar from "./LandingPageNavbar";
-import LandingPageFooter from "./LandingPageFooter";
+import LandingPageLayoutNavbar from "./LandingPageLayoutNavbar";
+import LandingPageLayoutFooter from "./LandingPageLayoutFooter";
 
 type PropTypes = {
   title: string;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 const LandingPageLayout = (props: PropTypes) => {
@@ -13,9 +13,9 @@ const LandingPageLayout = (props: PropTypes) => {
   return (
     <Fragment>
       <PageHead title={title} />
-      <LandingPageNavbar />
-      <div>{children}</div>
-      <LandingPageFooter />
+      <LandingPageLayoutNavbar />
+      <div className="py-10 md:p-6">{children}</div>
+      <LandingPageLayoutFooter />
     </Fragment>
   );
 };

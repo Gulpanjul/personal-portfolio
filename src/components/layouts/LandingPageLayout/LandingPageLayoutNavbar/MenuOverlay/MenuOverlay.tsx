@@ -1,15 +1,15 @@
 import NavLink from "../NavLink";
 
 interface PropTypes {
-    links: { path: string; title: string }[];
+    links: { label: string; href: string }[];
 }
 
 const MenuOverlay = ({ links }: PropTypes) => {
   return (
-    <ul className="flex flex-col py-4 items-center">
+    <ul className="lg:hidden flex flex-col py-4 items-center">
       {links.map((link, index) => (
         <li key={index}>
-          <NavLink href={link.path} title={link.title} />
+          <NavLink href={link.href} title={link.label} />
         </li>
       ))}
     </ul>
