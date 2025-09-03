@@ -5,7 +5,7 @@ import Paragraph from "@/components/ui/Paragraph";
 import { TypeAnimation } from "react-type-animation";
 
 const colorGradient = "from-[#5433FF] via-[#20BDFF] to-[#A5FECB]";
-const buttonClassName = `p-[3px] w-full sm:w-fit rounded-full bg-linear-to-br ${colorGradient}`;
+const buttonClassName = `p-[3px] w-full lg:w-fit rounded-full bg-linear-to-br ${colorGradient}`;
 const spanClassName = "block rounded-full w-full sm:px-5 py-0.5 text-xl";
 
 const NameAnimation = () => {

@@ -12,7 +12,7 @@ const ExperienceSection = () => {
   });
   return (
     <>
-      <Display size="md" className="font-bold mb-32 text-center">
+      <Display size="md" className="font-bold mb-32 lg:mb-16 text-center">
         Experience
       </Display>
       {/* <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">

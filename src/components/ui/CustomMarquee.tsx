@@ -15,7 +15,7 @@ const CustomMarquee = (props: TypeProps) => {
       autoFill={true}
       speed={50}
       gradient={true}
-      gradientColor={`hsl(var(--background))`}
+      gradientColor={`var(--background)`}
     >
       {children}
     </Marquee>
