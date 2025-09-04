@@ -2,11 +2,10 @@ import Image from "next/image";
 import Paragraph from "@/components/ui/Paragraph";
 import { socialList } from "./AboutSection.constant";
 import Dock from "@/components/ui/dock";
-import Display from "@/components/ui/Display";
+import Heading from "@/components/ui/Heading";
 
 const AboutSection = () => {
   return (
-    <section className="text-primary" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/Images/Personal/about.png"
@@ -16,7 +15,7 @@ const AboutSection = () => {
           className="border-8 border-gray-500 rounded-full"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <Display size="sm">About Me</Display>
+          <Heading size="large" as={"h2"} strong>The Story Behind the Person</Heading>
           <Paragraph className="mt-4 text-muted-foreground" size="medium">
             A graduate of the Information Systems program at Universitas
             Gunadarma (2023) with a strong interest in full-stack web
@@ -42,7 +41,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
   );
 };
 

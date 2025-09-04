@@ -1,16 +1,22 @@
-import projectsData from "./ProjectsData.constants";
+import projectsData from "./ProjectsSection.constant";
 import ProjectCard from "./ProjectCard";
+import Heading from "@/components/ui/Heading";
 
 const ProjectsSection = () => {
   return (
-    <section id="projects">
-      <h2 className="font-bold text-8xl mb-20 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
-        My Projects
-      </h2>
+    <>
+      <Heading
+        as="h2"
+        size="large"
+        strong
+        className="w-full text-center lg:mb-16"
+      >
+        Ideas Turned Into Real-World Impact
+      </Heading>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {projectsData.map((project) => (
+        {projectsData.map((project, index) => (
           <ProjectCard
-            key={project.id}
+            key={index}
             title={project.title}
             description={project.description}
             imgUrl={project.image}
@@ -20,7 +26,7 @@ const ProjectsSection = () => {
           />
         ))}
       </div>
-    </section>
+    </>
   );
 };
 

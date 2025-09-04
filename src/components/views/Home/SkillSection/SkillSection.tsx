@@ -8,7 +8,7 @@ const SkillSection = () => {
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
       <div className="lg:border-muted-foreground lg:border rounded-md py-8 px-16 items-center justify-between text-center flex-col flex gap-5">
         <Heading as="h2" size="medium" strong>
-          Tech Stack I Work With
+          Crafts, Tools & Talents I Master
         </Heading>
         <CustomMarquee>
           {frontendTech.map((tech, index) => (

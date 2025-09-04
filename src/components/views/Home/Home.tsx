@@ -19,23 +19,23 @@ const Home = () => {
           <SkillSection />
         </Section>
 
-      <Section>
+      <Section id="about">
         <AboutSection />
       </Section>
 
-      <Section className="mt-20">
+      <Section id="experience" className="py-16">
         <ExperienceSection />
       </Section>
 
-      <Section>
+      <Section id="education" className="py-16">
         <EducationSection />
       </Section>
 
-      <Section>
+      <Section id="projects" className="py-16">
         <ProjectsSection />
       </Section>
 
-      <Section>
+      <Section id="certificate" className="py-16">
         <CertificateSection />
       </Section>
     </div>

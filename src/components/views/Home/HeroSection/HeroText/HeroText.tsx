@@ -49,7 +49,7 @@ const HeroText = () => {
       <div className="mt-4 flex flex-col lg:flex-row gap-5 ">
         <Button className={`${buttonClassName}`}>
           <Label
-            className={`bg-transparent hover:bg-background text-background hover:text-primary ${spanClassName}`}
+            className={`bg-transparent hover:bg-background text-secondary hover:text-primary ${spanClassName}`}
             size={"small"}
             weight={"strong"}
           >
@@ -58,7 +58,7 @@ const HeroText = () => {
         </Button>
         <Button className={`${buttonClassName}`}>
           <Label
-            className={`bg-background hover:bg-transparent text-primary hover:text-background ${spanClassName}`}
+            className={`bg-background hover:bg-transparent text-primary hover:text-secondary ${spanClassName}`}
             size={"xSmall"}
             weight={"strong"}
           >
