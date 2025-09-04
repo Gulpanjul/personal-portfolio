@@ -21,12 +21,14 @@ const displayVariants = cva("tracking-tight font-normal", {
 
 export interface DisplayProps
   extends React.HTMLAttributes<HTMLHeadingElement>,
-    VariantProps<typeof displayVariants> {}
+    VariantProps<typeof displayVariants> {
+  as?: React.ElementType;
+}
 
 const Display = React.forwardRef<HTMLHeadingElement, DisplayProps>(
-  ({ className, size, strong, ...props }, ref) => {
+  ({ className, size, strong, as: Tag = "h1", ...props }, ref) => {
     return (
-      <h1
+      <Tag
         ref={ref}
         className={cn(displayVariants({ size, strong }), className)}
         {...props}
